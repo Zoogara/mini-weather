@@ -8,20 +8,22 @@ When I bought the weather station I went cheap and got the wifi only version (i.
 
 The hardware comprises of:
 
-2.2" TFT display with ili9341 controller
-ESP32 Devkit V1
-Micro PIR
+ - 2.2" TFT display with ili9341 controller
+ - ESP32 Devkit V1
+ - Micro PIR
+
 From the top down, the display shows:
 
-Current time
-Current outside temperature
-Compass rose with wind direction and strength indicator
-Wind trend lines
-Named wind direction and speed
-Wind gust as reported by the weather station - “G” (last 20 sec max)
-Trend display maximum - “TM” (this is the speed that the longest trend line represents)
-Rainfall since midnight
-Current air pressure
+  - Current time
+  - Current outside temperature
+  - Compass rose with wind direction and strength indicator
+  - Wind trend lines
+  - Named wind direction and speed
+  - Wind gust as reported by the weather station - “G” (last 20 sec max)
+  - Trend display maximum - “TM” (this is the speed that the longest trend line represents)
+  - Rainfall since midnight
+  - Current air pressure
+
 The display will go to sleep if not trigger by the motion sensor for 5 mins.
 
 The software also attempts to prevent burn-in of the display.
